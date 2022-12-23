@@ -16,6 +16,6 @@ entries:
     - https://github.com/brunowego/prometheus-php-fpm-exporter
     - https://github.com/onixsib/prometheus-php-fpm-exporter
     urls:
-    - https://onixsib.github.io/helm-chart/prometheus-php-fpm-exporter-0.1.0.tgz
+    - https://onixsib.github.io/prometheus-php-fpm-exporter/helm-chart/prometheus-php-fpm-exporter-0.1.0.tgz
     version: 0.1.0
 generated: "2022-12-23T12:16:25.582365223+07:00"
