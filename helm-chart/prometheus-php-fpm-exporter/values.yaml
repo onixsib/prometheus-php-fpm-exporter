@@ -36,6 +36,7 @@ service:
   type: ClusterIP
   externalPort: 9253
   internalPort: 9253
+  annotations: {}
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
