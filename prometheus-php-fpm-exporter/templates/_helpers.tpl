@@ -43,7 +43,9 @@ app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
 app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{- end -}}
-
+{{- if .Values.service.labels }}
+{{ toYaml .Values.service.labels }}
+{{- end }}
 {{/*
 Create the name of the service account to use.
 */}}
