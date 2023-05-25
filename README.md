@@ -7,4 +7,4 @@ helm repo add prometheus-php-fpm-exporter https://onixsib.github.io/prometheus-p
 helm install prometheus-php-fpm-exporter/prometheus-php-fpm-exporter
 ```
 
-Have a nice day ! :)
+Have a nice day! :)
