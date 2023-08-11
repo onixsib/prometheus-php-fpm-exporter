@@ -21,7 +21,7 @@ jobs:
 
       - name: Copy files to gh-pages branch
         run: |
-          git push origin gh-pages:gh-pages # push to remote branch
+          git push origin gh-pages # push to remote branch
 
       - name: Install Helm
         run: |
