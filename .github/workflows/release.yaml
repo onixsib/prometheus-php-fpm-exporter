@@ -23,7 +23,7 @@ jobs:
         run: |
             git fetch origin gh-pages:gh-pages --update-head-ok
             git clean -fx
-            git checkout better-page -- simplified
+            git checkout main -- simplified
             git add .
             git diff-index --quiet HEAD ||  git commit -am "copy files from better-page"  # commit to the repository (ignore if no modification)
             git push origin gh-pages # push to remote branch
