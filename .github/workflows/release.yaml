@@ -19,6 +19,15 @@ jobs:
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
 
+      - name: Copy files to gh-pages branch
+        run: |
+            git fetch origin gh-pages:gh-pages --update-head-ok
+            git clean -fx
+            git checkout better-page -- simplified
+            git add .
+            git diff-index --quiet HEAD ||  git commit -am "copy files from better-page"  # commit to the repository (ignore if no modification)
+            git push origin gh-pages # push to remote branch
+
       - name: Install Helm
         run: |
           curl -fsSLo get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
