@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  prometheus-php-fpm-exporter:
+  - apiVersion: v1
+    appVersion: 1.1.2
+    created: "2023-08-11T09:39:35.933574068Z"
+    description: PHP-FPM metrics exporter for prometheus
+    digest: a18422b0614a2fa9eabe00353d91f79525b9f79af0fac88828a0850ceb895217
+    home: https://github.com/hipages/php-fpm_exporter
+    maintainers:
+    - email: a@onixsib.ru
+      name: nbm
+    name: prometheus-php-fpm-exporter
+    sources:
+    - https://github.com/hipages/php-fpm_exporter
+    - https://github.com/brunowego/prometheus-php-fpm-exporter
+    - https://github.com/onixsib/prometheus-php-fpm-exporter
+    urls:
+    - https://github.com/onixsib/prometheus-php-fpm-exporter/releases/download/prometheus-php-fpm-exporter-0.1.6/prometheus-php-fpm-exporter-0.1.6.tgz
+    version: 0.1.6
+generated: "2023-08-11T09:39:35.933580568Z"
